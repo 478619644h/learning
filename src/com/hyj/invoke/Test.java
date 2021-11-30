@@ -8,12 +8,14 @@ import java.lang.reflect.Field;
 public class Test {
 
     class GrandFather{
+
         void thinking(){
             System.out.println(" i am grandfather");
         }
     }
 
     class Father extends GrandFather{
+        @Override
         void thinking(){
             System.out.println("i am father");
            // super.thinking();
@@ -21,6 +23,8 @@ public class Test {
     }
 
     class Son extends Father{
+
+        @Override
         void thinking() {
             try {
                 MethodType mt = MethodType.methodType(void.class);

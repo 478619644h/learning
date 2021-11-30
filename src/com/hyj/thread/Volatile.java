@@ -19,9 +19,10 @@ class ThreadPrint extends  Thread {
         this.printNum = printNum;
     }
     static volatile int  n  =   3 ;
+    @Override
     public void run() {
         while (n<printNum) {
-//                System.out.println("current Name is : " +  currentName + "current n is: " + n);
+               System.out.println("current Name is : " +  currentName + "current n is: " + n);
             if(currentName ==  (char)('A' + n%3)) {
                 System.out.print(currentName);
                 n++;

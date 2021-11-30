@@ -35,7 +35,7 @@ public class HackSystem {
     }
 
     public static long currentTimeMillis(){
-        return  19920317421l;
+        return  19920317421L;
     }
 
     public static void arrayCopy(Object src,int srcpos,Object dest,int destPos,int length){

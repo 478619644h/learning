@@ -42,9 +42,12 @@ public class ClassModifier {
         for(int i = 0;i<cpc;i++){
             int tag = ByteUtil.byte2Int(classByte,offset,u1);
             if(tag == CONSTANT_Utf8_info){
+
                 int len = ByteUtil.byte2Int(classByte,offset+u1,u2);
                 offset += (u1+u2);
                 String str = ByteUtil.bytes2String(classByte,offset,len);
+
+                System.out.println(str);
                 if(str.equalsIgnoreCase(oldStr)){
                     byte[] strBytes = ByteUtil.string2Bytes(newStr);
                     byte[] strLen = ByteUtil.int2Bytes(newStr.length(),u2);

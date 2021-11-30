@@ -6,7 +6,8 @@ import java.lang.reflect.Field;
 
 /**
  * vm args -Xms20m -XX:MaxDirectMemorySize=10m
- *
+ * 直接内存的oom
+ * exception :java.lang.OutOfMemoryError
  */
 
 public class DirectMemoryOOm {

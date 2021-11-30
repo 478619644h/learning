@@ -1,5 +1,7 @@
 package com.hyj;
 
+import java.util.HashMap;
+
 public class TryCatch {
     private static int x = 0;
 
@@ -20,4 +22,14 @@ public class TryCatch {
             return i;
         }
     }
+
+    class myMap extends HashMap implements Comparable{
+
+        @Override
+        public int compareTo(Object o) {
+             return 0;
+        }
+    }
+
+
 }

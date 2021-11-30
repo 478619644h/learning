@@ -8,6 +8,7 @@ public class DynamicProxyTest {
 
     interface IHello{
         void sayHello();
+        void sayHei();
     }
 
 
@@ -16,6 +17,12 @@ public class DynamicProxyTest {
         public void sayHello() {
             System.out.println("hello world");
         }
+
+        @Override
+        public void sayHei() {
+            System.out.println("hei");
+        }
+
     }
 
     static class DynamicProxy implements InvocationHandler{
@@ -37,5 +44,6 @@ public class DynamicProxyTest {
     public static void main(String[] args) {
         IHello iHello = (IHello)new DynamicProxy().bind(new Hello());
         iHello.sayHello();
+        iHello.sayHei();
     }
 }
