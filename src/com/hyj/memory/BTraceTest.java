@@ -19,6 +19,8 @@ public class BTraceTest {
             int b = (int)Math.round(Math.random()*1000);
             System.out.println(bt.add(a,b));
         }
+
+
     }
 
 }
