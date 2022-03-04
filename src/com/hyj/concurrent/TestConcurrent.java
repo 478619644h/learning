@@ -5,8 +5,9 @@ import java.util.concurrent.Semaphore;
 public class TestConcurrent {
 
 
-    public static void main(String[] args)  {
+    public static void main(String[] args) throws Exception  {
         //testCyclicBarrier();
+        //testCountDownLatch();
         testSemaphore();
     }
 
@@ -29,7 +30,7 @@ public class TestConcurrent {
     public static void testSemaphore(){
         int n = 8;//工人
         Semaphore semaphore = new Semaphore(5);//同时可以有n个线程可以获得许可
-        for(int i = 0;i < n;i++){
+        for(int i = 1;i <= n;i++){
             new Worker(i,semaphore).start();
         }
     }

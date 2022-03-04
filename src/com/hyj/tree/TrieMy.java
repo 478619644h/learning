@@ -81,7 +81,7 @@ public class TrieMy {
         for (String s : dict) {
             trieMy.insert(s);
         }
-        System.out.println(trieMy.countPrefix("ac"));
+        System.out.println(trieMy.countPrefix("ab"));
     }
 
 }

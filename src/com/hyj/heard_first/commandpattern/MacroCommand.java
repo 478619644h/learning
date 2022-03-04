@@ -1,5 +1,6 @@
 package com.hyj.heard_first.commandpattern;
 
+//宏命令
 public class MacroCommand implements Command {
 
     Command[] commands;

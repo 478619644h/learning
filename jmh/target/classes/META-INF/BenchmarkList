@@ -1,0 +1,3 @@
+JMH S 31 com.hyj.benchmark.BenchmarkTest S 55 com.hyj.benchmark.generated.BenchmarkTest_shift_jmhTest S 5 shift S 10 Throughput I 1 2 A 1 1 1 E I 1 3 T 3 1 s E I 1 5 T 3 1 s E I 1 1 E E E E E E U 11 NANOSECONDS E E 
+JMH S 31 com.hyj.benchmark.BenchmarkTest S 53 com.hyj.benchmark.generated.BenchmarkTest_div_jmhTest S 3 div S 10 Throughput I 1 2 A 1 1 1 E I 1 3 T 3 1 s E I 1 5 T 3 1 s E I 1 1 E E E E E E U 11 NANOSECONDS E E 
+JMH S 37 com.hyj.benchmark.JMHSample_27_Params S 61 com.hyj.benchmark.generated.JMHSample_27_Params_bench_jmhTest S 5 bench S 11 AverageTime E A 1 1 1 E I 1 5 T 3 1 s E I 1 5 T 3 1 s E I 1 1 E E E E E M 2 3 arg 5 1 1 2 31 2 65 3 101 3 103 9 certainty 7 1 0 1 1 1 2 1 4 1 8 2 16 2 32 U 11 NANOSECONDS E E 
