@@ -2,6 +2,9 @@ package com.hyj.sorted;
 
 import java.util.Arrays;
 
+/**
+ * 计数排序
+ */
 public class CountingSort implements IArraySort {
 
     @Override

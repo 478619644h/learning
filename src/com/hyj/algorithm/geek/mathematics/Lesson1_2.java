@@ -1,4 +1,4 @@
-package com.hyj.jike.mathematics;
+package com.hyj.algorithm.geek.mathematics;
 
 import java.math.BigInteger;
 
