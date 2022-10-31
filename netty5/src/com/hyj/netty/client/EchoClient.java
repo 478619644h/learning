@@ -19,7 +19,7 @@ public class EchoClient {
     private String separator = "$_";
 
     public static void main(String[] args) throws InterruptedException {
-        new EchoClient().connect("127.0.0.1",8080);
+        new EchoClient().connect("localhost",8080);
     }
 
     private void connect(String host,int port) throws InterruptedException {

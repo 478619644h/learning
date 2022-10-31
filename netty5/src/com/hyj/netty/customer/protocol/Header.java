@@ -1,6 +1,5 @@
 package com.hyj.netty.customer.protocol;
 
-import com.sun.prism.impl.BufferUtil;
 import io.netty.buffer.ByteBuf;
 import io.netty.buffer.Unpooled;
 
