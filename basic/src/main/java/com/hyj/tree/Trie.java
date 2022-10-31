@@ -121,7 +121,7 @@ public class Trie {
     public void preTraverse(TrieNode node) {
         if (node != null) {
             System.out.print(node.val + "-");
-            for (TrieNode child: node.son) {
+            for (TrieNode child : node.son) {
                 preTraverse(child);
             }
         }
@@ -135,18 +135,16 @@ public class Trie {
         Trie tree = new Trie();
         String[] strs = {"banana", "band", "bee", "absolute", "acm",};
         String[] prefix = {"ba", "b", "band", "abc",};
-        for (String str:
-             strs) {
+        for (String str : strs) {
             tree.insert(str);
         }
         System.out.println(tree.has("abc"));
         tree.preTraverse(tree.getRoot());
         System.out.println();
         //tree.printAllWords();
-        for (String pre:
-             prefix) {
+        for (String pre : prefix) {
             int num = tree.countPrefix(pre);
-            System.out.println(pre + "" + num);
+            System.out.println(pre + "=" + num);
         }
     }
 

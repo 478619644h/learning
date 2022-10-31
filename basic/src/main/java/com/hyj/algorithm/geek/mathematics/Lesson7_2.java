@@ -38,7 +38,7 @@ public class Lesson7_2 {
             // 放开注释 生成不可重复的密码
             ArrayList<String> current_eles = (ArrayList<String>) eles.clone();
 
-            //current_eles.remove(ele);
+            current_eles.remove(ele);
 
 
             getPassword(n,current_eles,current_result);
